@@ -1,41 +1,38 @@
-/**
- * file: style.css
- * purpose: styles, animation etc
- * further development: meyer reset perhaps?
- **/
-
-
- body{
- 			margin-top: 100px;
- 			font-family: 'Trebuchet MS', serif;
- 			line-height: 1.6
+body{
+ 			font-family: 'Montserrat', 'sans-serif';
+ 			line-height: 1.6;
  		}
  		.container{
- 			width: 800px;
+ 			width: 100%;
  			margin: 0 auto;
  		}
 
  		ul.tabs{
  			margin: 0px;
- 			padding: 0px;
+ 			padding: 0 20% 0 20%;
  			list-style: none;
  		}
  		ul.tabs li{
+          	font-size: {{font_size}}px;
  			background: none;
- 			color: #222;
+ 			color: {{title_color}};
  			display: inline-block;
  			padding: 10px 15px;
  			cursor: pointer;
+          	opacity: 0.5;
  		}
 
  		ul.tabs li.current{
- 			background: #fff;
+ 			background: {{background_color}};
  			color: #0b2c25;
+          	opacity: 1;
  		}
 
  		.tab-content{
+          	font-size: {{font_size_content}}px;
+          	text-align: {{alignment}};
  			display: none;
- 			background: #fff;
+ 			background: {{background_color}};
  			padding: 30px;
  		}
 
@@ -43,13 +40,19 @@
  			display: inherit;
  		}
 
-
     .tabs {
+      width: 100%;
       display: flex;
     }
 
+
     .tab-link {
-      width: 100px;
+      justify-content: center;
+      color: {{title_color}};
+      font-weight: {{font_weight}};
+      text-transform: {{text_transform}};
+      text-align: {{alignment2}};
+      width: auto;
       margin: auto;
     }
 
