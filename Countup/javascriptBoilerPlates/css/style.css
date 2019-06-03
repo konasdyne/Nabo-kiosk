@@ -1,8 +1,20 @@
-
-.count
+.count-up
 {
-  line-height: 100px;
-  color:black;
-  margin-left:30px;
-  font-size:25px;
+  width: 100%;
+}
+.count {
+  height: {{height_counter}}px;
+  color:{{font_farve}};
+  text-align: {{font_align}};
+  font-size:{{font_size}}px;
+  font-weight: {{font_weight}};
+  margin-top: -2%;
+}
+
+.counter-titel h4 {
+  color: {{titel_farve}};
+  font-size: {{titel_stoerrelse}}px;
+  font-weight: {{titel_weight}};
+  text-align: {{alignment_titel}};
+  text-transform: normal;
 }
